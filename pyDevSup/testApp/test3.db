@@ -1,0 +1,8 @@
+record(waveform, "$(P)wf") {
+  field(DTYP, "Python Device")
+  field(INP , "@test3")
+  field(FTVL, "FLOAT")
+  field(NELM, "10")
+  field(SCAN, "2 second")
+}
+

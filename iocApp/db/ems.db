@@ -1,0 +1,147 @@
+# start scan: x
+record(bo, "$(P):START_SCAN") {
+    field(DTYP, "Python Device")
+    field(OUT,  "@devsup.ptable ems set trigger")
+    field(VAL,  "0")
+    field(ZNAM, "IDLE")
+    field(ONAM, "STARTED")
+    field(PINI, "YES")
+}
+#
+# pos rd: x
+record(ao, "$(P):POS_NOW") {
+    field(DTYP, "Python Device")
+    field(OUT,  "@devsup.ptable ems set pos_now")
+    field(VAL,  "0")
+    field(PINI, "YES")
+    field(SCAN, "I/O Intr")
+}
+# scan status: x
+record(mbbo, "$(P):SCAN_STATUS") {
+    field(DTYP, "Python Device")
+    field(OUT,  "@devsup.ptable ems set status")
+    field(VAL,  "0")
+    #field(ZNAM, "BUSY")
+    #field(ONAM, "DONE")
+    field(PINI, "YES")
+    field(SCAN, "I/O Intr")
+}
+
+record(bi, "$(P):SCAN_STATUS_RD") {
+    field(DTYP, "Python Device")
+    field(INP,  "@devsup.ptable ems get status")
+    field(VAL,  "0")
+    field(ZNAM, "BUSY")
+    field(ONAM, "DONE")
+    field(PINI, "YES")
+    field(SCAN, "I/O Intr")
+}
+
+# data: x
+record(waveform, "$(P):Det1Data") {
+    field(DTYP, "Python Device")
+    field(INP,  "@devsup.ptable ems get arr")
+    field(PINI, "YES")
+    field(FTVL, "FLOAT")
+    field(NELM,  "40000")
+    field(SCAN, "I/O Intr")
+}
+
+# pos: x
+record(ao, "$(P):POS_BEGIN") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "-5")
+    field(VAL, "-5")
+    field(PINI, "YES")
+}
+
+record(ao, "$(P):POS_END") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "30")
+    field(VAL, "30")
+    field(PINI, "YES")
+}
+
+record(ao, "$(P):POS_STEP") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "1")
+    field(VAL, "1")
+    field(PINI, "YES")
+}
+
+record(ao, "$(P):POS_SETTLING") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0.00")
+    field(VAL, "0.00")
+    field(PINI, "YES")
+}
+
+# volt: x
+record(ao, "$(P):VOLT_BEGIN") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "-5")
+    field(VAL, "-5")
+    field(PINI, "YES")
+}
+
+record(ao, "$(P):VOLT_END") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "30")
+    field(VAL, "30")
+    field(PINI, "YES")
+}
+
+record(ao, "$(P):VOLT_STEP") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "1")
+    field(VAL, "1")
+    field(PINI, "YES")
+}
+
+record(ao, "$(P):VOLT_SETTLING") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0.05")
+    field(VAL, "0.05")
+    field(PINI, "YES")
+}
+
+# bias volt
+record(ao, "$(P):BIAS_VOLT") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "-200")
+    field(VAL, "-200")
+    field(PINI, "YES")
+}
+
+# Ion species
+record(stringout, "FE_ISRC1:BEAM:ELMT_BOOK") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "Ar")
+    field(VAL, "Ar")
+    field(PINI, "YES")
+}
+record(ao, "FE_ISRC1:BEAM:Z_BOOK") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "18")
+    field(VAL, "18")
+    field(PINI, "YES")
+}
+record(ao, "FE_ISRC1:BEAM:Q_BOOK") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "9")
+    field(VAL, "9")
+    field(PINI, "YES")
+}
+record(ao, "FE_ISRC1:BEAM:A_BOOK") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "40")
+    field(VAL, "40")
+    field(PINI, "YES")
+}
+record(ao, "FE_SCS1:BEAM:HV_BOOK") {
+    field(DTYP, "Soft Channel")
+    field(EGU, "kV")
+    field(OUT, "53.333")
+    field(VAL, "53.333")
+    field(PINI, "YES")
+}

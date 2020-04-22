@@ -1,0 +1,14 @@
+*.pyc
+*.pyo
+*~
+*.dbl
+O.*
+bin
+include
+lib
+db
+dbd
+python*
+_build
+envPaths
+configure/os
