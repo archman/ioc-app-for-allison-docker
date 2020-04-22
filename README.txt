@@ -1,4 +1,4 @@
-Image with IOC app.
+Image with IOC app, work with the simulation mode of Allison Scanner App
 
 +-----------------------------------+---------------------------------+
 |         Image Name                |    Note                         |
