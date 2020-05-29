@@ -145,3 +145,14 @@ record(ao, "FE_SCS1:BEAM:HV_BOOK") {
     field(VAL, "53.333")
     field(PINI, "YES")
 }
+
+# device ready signal
+record(bi, "$(P):READY") {
+    field(DTYP, "Python Device")
+    field(INP,  "@devsup.ptable ems get is_ready")
+    field(VAL,  "0")
+    field(ZNAM, "NOT-READY")
+    field(ONAM, "READY")
+    field(PINI, "YES")
+    field(SCAN, "I/O Intr")
+}

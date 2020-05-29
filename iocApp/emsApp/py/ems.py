@@ -16,6 +16,7 @@ class EmsSupport(PT.TableBase):
     status = PT.Parameter(iointr=True)
     arr = PT.Parameter(iointr=True)
     pos_now = PT.Parameter(iointr=True)
+    is_ready = PT.Parameter(iointr=True)
 
     def __init__(self, datafile, **kws):
         super(self.__class__, self).__init__(**kws)
@@ -49,6 +50,8 @@ class EmsSupport(PT.TableBase):
         self.status.notify()
         self.pos_now.value = 0
         self.pos_now.notify()
+        self.is_ready.value = 1
+        self.is_ready.notify()
 
     def on_update(self):
         while self.event.wait():
