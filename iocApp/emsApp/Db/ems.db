@@ -156,3 +156,127 @@ record(bi, "$(P):READY") {
     field(PINI, "YES")
     field(SCAN, "I/O Intr")
 }
+
+# results x
+record(ao, "$(P):XCEN") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):XRMS") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):XPCEN") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):XPRMS") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):XALPHA") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):XBETA") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):XGAMMA") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):XEMIT") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):XNEMIT") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):XINTEN") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+
+# results y
+record(ao, "$(P):YCEN") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):YRMS") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):YPCEN") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):YPRMS") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):YALPHA") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):YBETA") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):YGAMMA") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):YEMIT") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):YNEMIT") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
+record(ao, "$(P):YINTEN") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINI, "YES")
+}
